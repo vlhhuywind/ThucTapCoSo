@@ -58,3 +58,25 @@ void ReadInputFile2(int a[100][100], int &n, int &start, int &finsh)
 	}
 	fs2.close();
 }
+void RhowMatrix(int a[100][100], int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			cout << a[i][j] << "\t";
+		}
+		cout << "\n";
+	}
+}
+
+int Count(int n, Node *Open)
+{
+	int count = 0;
+	for (int i = 0; i < n; i++)
+	{
+		if (Open[i].color == 1)
+			count++;
+	}
+	return count;
+}
