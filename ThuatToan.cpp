@@ -2,7 +2,7 @@
 #include <fstream>
 #include <iostream>
 using namespace std;
-
+/////
 struct Node
 {
 	int index;  // so thu tu
